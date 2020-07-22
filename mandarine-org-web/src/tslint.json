@@ -1,0 +1,90 @@
+{
+
+  "rules": {
+    "whitespace": [
+      true,
+      "check-module"
+    ],
+    "no-empty": false,
+    "indent": [true, "spaces", 4],
+    "max-line-length": {
+      "options": {
+        "limit": 180,
+        "ignore-pattern": "^import |^export {(.*?)}|class [a-zA-Z]+ implements |// "
+      }
+    },
+    "comment-format": [true, "check-space"],
+    "comment-type": false,
+    "prefer-object-spread": false,
+    "template-i18n": false,
+    "no-console": [true, "log"],
+    "arrow-parens": true,
+    "eofline": false,
+    "curly": [
+      true,
+      "ignore-same-line"
+    ],
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-pascal-case",
+      "allow-leading-underscore",
+      "ban-keywords"
+    ],
+    "no-null-keyword": false,
+    "file-name-casing": [
+      true,
+      "kebab-case"
+    ],
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "any",
+        "named-imports-order": "case-insensitive",
+        "grouped-imports": false
+      }
+    ],
+    "no-unbound-method": [
+      true,
+      {
+        "ignore-static": true,
+        "whitelist": [
+          "expect"
+        ]
+      }
+    ],
+    "align": [
+      true,
+      "parameters",
+      "statements",
+      "members"
+    ],
+    "cyclomatic-complexity": [
+      true,
+      15
+    ],
+    "template-cyclomatic-complexity": [
+      true,
+      15
+    ],
+    "import-blacklist": [
+      true,
+      "rxjs/Rx"
+    ],
+    "deprecation": {
+      "severity": "warning"
+    },
+    "quotemark": [
+      true,
+      "single",
+      "avoid-template",
+      "avoid-escape"
+    ],
+    "only-arrow-functions": true,
+    "array-type": [
+      true,
+      "generic"
+    ],
+    "no-eval": true
+  }
+}

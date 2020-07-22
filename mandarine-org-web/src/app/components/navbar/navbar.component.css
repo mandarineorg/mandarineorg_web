@@ -1,0 +1,16 @@
+.mat-toolbar.mat-primary {
+  background: #0a0a0a !important;
+  color: #fff;
+}
+
+.navbar-logo {
+  background-image: url(/assets/images/gwlogo.svg);
+  background-repeat: no-repeat;
+  width: 110px;
+  height: 50px;
+}
+
+.navbar-logo:hover {
+  background-image: url(/assets/images/fclogo.svg);
+  animation-fill-mode: forwards;
+}

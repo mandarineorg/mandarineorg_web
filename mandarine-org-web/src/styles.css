@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.h1-doc-markdown {
+  font-weight: 400;
+  color: #4a4a4a;
+  font-size: 2rem !important;
+}
+
+.anchor {
+  font-size: 0.85em;
+  float: left;
+  padding-right: .23em;
+  color: #ccc!important;
+  text-decoration: none!important;
+  transition: all .3s;
+}
+
+.anchor:hover {
+  color: #ea4c28 !important;
+}
+
+.p-doc-markdown {
+  font-size: 16px !important;
+}
+
+.show-el {
+  display: block;
+}
+
+.hide-el {
+  display: none;
+}
+
+.no-list-symbol {
+  list-style: none
+}
+markdown blockquote {
+  background-color: #f9f9f9b8;
+}
+markdown blockquote p {
+  padding: 0.5rem 1rem 0.5rem !important;
+  border-left: 3px solid #ea4c28 !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+markdown ul {
+  font-size: 15px !important;
+}
+
+markdown>ul>li {
+  margin-top: 0.75rem;
+}
+
+img.up {
+  transform: rotate(180deg);
+}
+
+img.down {
+  transform: rotate(360deg);
+}
+
+img.menu-arrow {
+  margin-left: 3px;
+}
+
+markdown table {
+  border: 1px solid #dee2e6;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+markdown table thead th {
+  border-bottom-width: 2px;
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+markdown table th {
+  border: 1px solid #dee2e6;
+  padding: .75rem;
+}
+
+markdown table td {
+  border: 1px solid #dee2e6;
+  padding: .325rem;
+  vertical-align: top;
+}

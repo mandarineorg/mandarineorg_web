@@ -1,0 +1,171 @@
+<mandarine-navbar></mandarine-navbar>
+
+<mat-sidenav-container>
+  <mat-sidenav-content>
+    <section id="intro">
+      <div class="intro-content">
+        <div class="header-logo"></div>
+        <h2 style="font-size: 2rem;line-height: 55px; margin-left: 3rem">
+          <span style="color: #fc4a1a;">A minimalist</span>, <br>
+          decorator-driven,
+          <br> <i><span style="color: #fc4a1a;">MVC framework</span></i> for Deno.
+        </h2>
+      </div>
+      <div class="dashboard-buttons">
+      <button class="btn btn-primary doc-btn" routerLink="/docs/mandarine/introduction">Documentation</button>
+
+      <button class="btn btn-secondary source-code-btn" style="margin-left: 1%;" (click)="goToMandarineRepository()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg-inline--fa fa-github fa-w-16" style="width: 20px;height: 20px;"><path _ngcontent-xxn-c38="" fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+        <span style="margin-left: 10px;">Source code</span>
+      </button>
+      </div>
+    </section>
+
+    <div class="highlights-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 highlight-block">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="70px" height="70px" viewBox="0 0 100.000000 100.000000" preserveAspectRatio="xMidYMid meet">
+
+                <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                  <path d="M202 797 l-122 -122 0 -175 0 -175 123 -123 122 -122 175 0 175 0 123 123 122 122 0 175 0 175 -123 123 -122 122 -175 0 -175 0 -123 -123z m513 -157 l0 -75 -35 0 c-33 0 -35 2 -38 38 l-3 37 -50 0 -49 0 0 -169 0 -170 28 -3 c24 -3 27 -7 27 -38 l0 -35 -95 0 -95 0 0 35 c0 31 3 35 28 38 l27 3 0 170 0 169 -49 0 -50 0 -3 -37 c-3 -36 -5 -38 -38 -38 l-35 0 -3 64 c-2 35 -1 70 2 78 5 11 45 13 218 11 l213 -3 0 -75z"/>
+                </g>
+              </svg>
+            </div>
+            <h2 class="highlights">Typescript, <i><small>all the way down</small></i></h2>
+            <p style="font-size: 16px;"> Mandarine & all its sub-projects run on Deno, using Typescript as its main language, giving you better coding environments and Javascript's latest features.</p>
+          </div>
+          <div class="col-md-4 highlight-block">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="70px" height="70px" viewBox="0 0 64.000000 64.000000" preserveAspectRatio="xMidYMid meet">
+
+                <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                  <path d="M140 574 c0 -3 34 -62 75 -130 l74 -124 -74 -124 c-41 -68 -75 -127 -75 -130 0 -3 28 -6 63 -6 l62 0 78 130 78 130 -78 130 -78 130 -62 0 c-35 0 -63 -3 -63 -6z m187 -134 l72 -120 -72 -120 -72 -120 -43 0 c-24 0 -41 3 -39 8 2 4 34 58 71 120 l67 112 -67 113 c-37 61 -69 115 -71 120 -2 4 15 7 39 7 l43 0 72 -120z"/>
+                  <path d="M340 574 c0 -3 34 -62 75 -130 l74 -124 -74 -124 c-41 -68 -75 -127 -75 -130 0 -3 28 -6 63 -6 l62 0 78 130 78 130 -78 130 -78 130 -62 0 c-35 0 -63 -3 -63 -6z m187 -134 l72 -120 -72 -120 -72 -120 -43 0 c-24 0 -41 3 -39 8 2 4 34 58 71 120 l67 112 -67 113 c-37 61 -69 115 -71 120 -2 4 15 7 39 7 l43 0 72 -120z"/>
+                  <path d="M70 562 c0 -18 60 -112 72 -112 5 0 -2 21 -17 48 -32 55 -55 82 -55 64z"/>
+                  <path d="M160 407 c0 -8 7 -20 15 -27 12 -10 15 -10 15 3 0 8 -7 20 -15 27 -12 10 -15 10 -15 -3z"/>
+                  <path d="M200 320 c0 -5 7 -10 15 -10 8 0 15 5 15 10 0 6 -7 10 -15 10 -8 0 -15 -4 -15 -10z"/>
+                  <path d="M170 281 c0 -11 26 -22 34 -14 3 3 3 10 0 14 -7 12 -34 11 -34 0z"/>
+                  <path d="M152 238 c5 -15 28 -23 28 -10 0 5 -7 13 -16 16 -10 4 -14 1 -12 -6z"/>
+                  <path d="M125 190 c3 -5 13 -10 21 -10 8 0 12 5 9 10 -3 6 -13 10 -21 10 -8 0 -12 -4 -9 -10z"/>
+                  <path d="M100 152 c0 -5 7 -13 16 -16 10 -4 14 -1 12 6 -5 15 -28 23 -28 10z"/>
+                  <path d="M76 113 c-3 -3 -3 -10 0 -14 7 -12 34 -11 34 0 0 11 -26 22 -34 14z"/>
+                </g>
+              </svg>
+            </div>
+            <h2 class="highlights">Straightforward</h2>
+            <p style="font-size: 16px;"> The use of <code>decorators</code> & the simplicity of a single entry-point application makes development faster, easier and more readable. </p>
+          </div>
+          <div class="col-md-4 highlight-block">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="70px" height="70px" viewBox="0 0 50.000000 50.000000" preserveAspectRatio="xMidYMid meet">
+
+                <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                  <path d="M72 383 c3 -47 4 -48 39 -51 44 -4 62 15 57 60 -3 32 -5 33 -51 36 l-48 3 3 -48z"/>
+                  <path d="M337 423 c-13 -12 -7 -70 7 -82 8 -7 30 -11 48 -9 32 3 33 5 36 51 l3 47 -44 0 c-24 0 -47 -3 -50 -7z"/>
+                  <path d="M207 393 c-12 -11 -8 -23 8 -23 8 0 15 7 15 15 0 16 -12 20 -23 8z"/>
+                  <path d="M270 386 c0 -9 7 -16 16 -16 17 0 14 22 -4 28 -7 2 -12 -3 -12 -12z"/>
+                  <path d="M107 293 c-12 -11 -8 -23 8 -23 8 0 15 7 15 15 0 16 -12 20 -23 8z"/>
+                  <path d="M370 286 c0 -9 7 -16 16 -16 9 0 14 5 12 12 -6 18 -28 21 -28 4z"/>
+                  <path d="M102 218 c6 -18 28 -21 28 -4 0 9 -7 16 -16 16 -9 0 -14 -5 -12 -12z"/>
+                  <path d="M370 214 c0 -9 5 -14 12 -12 18 6 21 28 4 28 -9 0 -16 -7 -16 -16z"/>
+                  <path d="M77 163 c-4 -3 -7 -26 -7 -50 l0 -44 48 3 c45 3 47 4 50 36 2 18 -2 40 -9 48 -12 14 -70 20 -82 7z"/>
+                  <path d="M341 156 c-7 -8 -11 -30 -9 -48 3 -32 5 -33 51 -36 l48 -3 -3 48 c-3 47 -4 48 -39 51 -22 2 -40 -2 -48 -12z"/>
+                  <path d="M202 118 c6 -18 28 -21 28 -4 0 9 -7 16 -16 16 -9 0 -14 -5 -12 -12z"/>
+                  <path d="M270 114 c0 -9 5 -14 12 -12 18 6 21 28 4 28 -9 0 -16 -7 -16 -16z"/>
+                </g>
+              </svg>
+            </div>
+            <h2 class="highlights">All-in-one</h2>
+            <p style="font-size: 16px;">Mandarine along with its 4 different cores: Core, Security, Data & MVC bring a compacted, SOLID oriented solution for complex applications. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="code-example-wrapper">
+    <section class="code-container container mb-5" style="max-width: 100%;">
+        <div class="flex">
+            <div class="terminal-box">
+              <div>
+              <span class="ide-pink">import</span>
+                {{ '{' }}
+                <span class="ide-blue">MandarineCore, Controller, GET</span>
+                }
+                <span class="ide-pink">from</span>
+                <span class="ide-brown"> "https://deno.land/x/mandarinets/mod.ts";</span>
+              </div>
+              <br>
+              <div>
+              <span class="ide-yellow">@Controller()</span>
+                <br>
+              <span class="ide-pink">export </span> <span class="ide-blue-dark">class </span> <span class="ide-cyan">MyController</span> {{ '{' }}
+              </div>
+              <div style="margin-left: 2rem;">
+                <br>
+                <div>
+                  <span class="ide-yellow">@GET</span>(<span class="ide-brown-light">'/hello-world'</span>)
+                  <br>
+                  <span class="ide-blue-dark">public </span> <span class="ide-yellow">httpHandler</span>() {{ '{' }}
+                </div>
+                <div style="text-indent: 2rem">
+                  <span class="ide-pink">return </span> <span class="ide-brown-light">"Welcome to MandarineTS Framework!"</span>;
+                </div>
+                }
+                <br>
+                <br>
+              </div>
+                }
+              <div>
+                <br>
+                <span class="ide-blue-dark">new </span> <span class="ide-cyan">MandarineCore</span>().<span class="ide-yellow">MVC</span>().<span class="ide-yellow">run</span>();
+              </div>
+            </div>
+          <aside class="text" style="margin-left: 5rem;font-size: 16px;color: #ecececd6;">
+            <h2 class="h2 highlights">Deno + Mandarine + Typescript</h2>
+            <p style="width: 45%;">The internal features Deno brings such as importing by URL <span class="highlights">+</span> Mandarine's syntax & tools <span class="highlights">+</span> <br>
+              Typescript objected-oriented coding style is all you will ever need for a <i class="highlights">Mandarine-powered</i> application </p>
+            <br>
+            <br>
+            <p>New to <span class="highlights">Mandarine</span>? <br> Try our <a href="/docs/master/mandarine/hello-world">simple quickstart</a>.</p>
+          </aside>
+        </div>
+    </section>
+    </div>
+
+    <div style="padding-bottom: 3rem">
+      <div>
+        <h2 style="font-size: 2.5rem; color: #fc4a1a; text-align: center">Community & Support</h2>
+        <br>
+        <p class="community-support-paragraph">
+          Mandarine and its sub-projects are MIT-licensed & open-source which makes our growth depend on the members of our community & their support.
+        </p>
+
+        <div style="margin-top: 5%; text-align: center; margin-left: 35%; margin-right: 35%;">
+          <h2 class="highlights">In collaboration with</h2>
+          <div class="row">
+            <div class="col">
+              <a href="https://nest.land/" target="_blank">
+                <img src="/assets/images/members/nest-land.png" width="120" height="120" class="community-member"  matTooltip="Nest.land" matTooltipPosition="right" />
+              </a>
+              <br>
+              <span><small>Nest.land</small></span>
+            </div>
+            <div class="col">
+              <a href="https://crewdevio.vercel.app/projects/Trex" target="_blank">
+                <img src="/assets/images/members/trex-logo.png" width="120" height="120" class="community-member"  matTooltip="Trex" matTooltipPosition="right" />
+              </a>
+              <br>
+              <span><small>Trex</small></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <mandarine-footer></mandarine-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
