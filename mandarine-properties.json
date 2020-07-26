@@ -1,8 +1,5 @@
 {
     "mandarine": {
-        "server": {
-            "port": 80
-        },
         "resources": {
             "staticFolder": "./app/mandarine-static",
             "staticRegExpPattern": "/(.*)",

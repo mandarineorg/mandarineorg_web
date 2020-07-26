@@ -1,0 +1,1 @@
+web: deno run -c tsconfig.json --allow-net=:${PORT} --allow-env --allow-read --allow-write --cached-only mandarine-app.ts --port=${PORT}
