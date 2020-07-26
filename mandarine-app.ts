@@ -32,5 +32,4 @@ export class MyController {
 
 }
 
-let mvc = new MandarineCore().MVC();
-mvc.run();
+new MandarineCore().MVC().run({port: port});
