@@ -2,7 +2,7 @@
     "mandarine": {
         "resources": {
             "staticFolder": "./app/mandarine-static",
-            "staticRegExpPattern": "/(.*)",
+            "staticRegExpPattern": "/assets/(.*)",
             "staticIndex": "index.html"
         }
     }
