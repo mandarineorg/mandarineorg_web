@@ -2,7 +2,7 @@ import { MandarineCore, Controller, GET, Middleware, MiddlewareTarget, ResponseP
 import * as flags from "https://deno.land/std@0.61.0/flags/mod.ts";
 
 const { args } = Deno;
-const DEFAULT_PORT = 80;
+const DEFAULT_PORT = 8080;
 const argPort = flags.parse(args).port;
 const port = argPort ? Number(argPort) : DEFAULT_PORT;
 
