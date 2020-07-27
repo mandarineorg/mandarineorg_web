@@ -19,8 +19,7 @@ section#intro {
 section#intro {
   background: #111;
   color: white;
-  padding: 10rem 10rem 6.5rem 10%;
-  margin-top: -5rem;
+  padding: 9rem 0rem 6.5rem;
 }
 
 .intro-content {
@@ -110,7 +109,7 @@ section#intro {
   width: 50%;
   background-color: #262a2d;
   color: #fff;
-  padding: 70px 55px;
+  padding: 30px 55px;
   font-size: calc(6.5px + 0.4vw);
   font-family: monospace;
   position: relative;
@@ -184,4 +183,14 @@ section#intro {
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
   transition: filter .5s ease-in-out;
+}
+
+.center-items-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.center-dashboard-buttons {
+    align-items: center;
+    margin-top: 1rem;
 }

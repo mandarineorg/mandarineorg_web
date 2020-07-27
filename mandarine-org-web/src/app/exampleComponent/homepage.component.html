@@ -11,7 +11,7 @@
           <br> <i><span style="color: #fc4a1a;">MVC framework</span></i> for Deno.
         </h2>
       </div>
-      <div class="dashboard-buttons">
+      <div class="flex-wrap center-items-flex center-dashboard-buttons">
       <button class="btn btn-primary doc-btn" routerLink="/docs/mandarine/introduction">Documentation</button>
 
       <button class="btn btn-secondary source-code-btn" style="margin-left: 1%;" (click)="goToMandarineRepository()">
@@ -88,39 +88,7 @@
     <section class="code-container container mb-5" style="max-width: 100%;">
         <div class="flex">
             <div class="terminal-box">
-              <div>
-              <span class="ide-pink">import</span>
-                {{ '{' }}
-                <span class="ide-blue">MandarineCore, Controller, GET</span>
-                }
-                <span class="ide-pink">from</span>
-                <span class="ide-brown"> "https://deno.land/x/mandarinets/mod.ts";</span>
-              </div>
-              <br>
-              <div>
-              <span class="ide-yellow">@Controller()</span>
-                <br>
-              <span class="ide-pink">export </span> <span class="ide-blue-dark">class </span> <span class="ide-cyan">MyController</span> {{ '{' }}
-              </div>
-              <div style="margin-left: 2rem;">
-                <br>
-                <div>
-                  <span class="ide-yellow">@GET</span>(<span class="ide-brown-light">'/hello-world'</span>)
-                  <br>
-                  <span class="ide-blue-dark">public </span> <span class="ide-yellow">httpHandler</span>() {{ '{' }}
-                </div>
-                <div style="text-indent: 2rem">
-                  <span class="ide-pink">return </span> <span class="ide-brown-light">"Welcome to MandarineTS Framework!"</span>;
-                </div>
-                }
-                <br>
-                <br>
-              </div>
-                }
-              <div>
-                <br>
-                <span class="ide-blue-dark">new </span> <span class="ide-cyan">MandarineCore</span>().<span class="ide-yellow">MVC</span>().<span class="ide-yellow">run</span>();
-              </div>
+              <markdown src="/assets/homepage-example.md"></markdown>
             </div>
           <aside class="text" style="margin-left: 5rem;font-size: 16px;color: #ecececd6;">
             <h2 class="h2 highlights">Deno + Mandarine + Typescript</h2>
@@ -141,9 +109,9 @@
         <p class="community-support-paragraph">
           Mandarine and its sub-projects are MIT-licensed & open-source which makes our growth depend on the members of our community & their support.
         </p>
-
-        <div style="margin-top: 5%; text-align: center; margin-left: 35%; margin-right: 35%;">
-          <h2 class="highlights">In collaboration with</h2>
+        <h2 class="highlights" style="text-align: center;">In collaboration with</h2>
+        <div class="flex-wrap center-items-flex" style="text-align: center;">
+          <br>
           <div class="row">
             <div class="col">
               <a href="https://nest.land/" target="_blank">

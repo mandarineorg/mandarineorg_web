@@ -90,3 +90,8 @@ markdown table td {
   padding: .325rem;
   vertical-align: top;
 }
+
+.terminal-box markdown pre[class*="language-"] 
+{
+  background-color: unset !important;
+}
