@@ -6,30 +6,13 @@ const DEFAULT_PORT = 8080;
 const argPort = flags.parse(args).port;
 const port = argPort ? Number(argPort) : DEFAULT_PORT;
 
-@Middleware(new RegExp('/docs/*'))
-export class Middleware1 implements MiddlewareTarget {
-
-    public onPreRequest(@ResponseParam() response: any): boolean {
-        const angularIndex = Deno.openSync("./app/mandarine-static/index.html", {read: true});
-        response.body = Deno.readAllSync(angularIndex);
-        return false;
-    }
-
-    public onPostRequest(): void {
-    }
-}
-
 @Controller()
 export class MyController {
-
-    @GET('/docs/:product/:content')
+    @GET('/(.*)')
     public handler1() {
+        const angularIndex = Deno.openSync("./app/mandarine-static/index.html", {read: true});
+        response.body = Deno.readAllSync(angularIndex);
     }
-
-    @GET('/docs/:branch/:product/:content')
-    public handler2() {
-    }
-
 }
 
 new MandarineCore().MVC().run({port: port});
