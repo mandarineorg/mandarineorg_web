@@ -11,7 +11,7 @@ export class MyController {
     @GET('/(.*)')
     public handler1() {
         const angularIndex = Deno.openSync("./app/mandarine-static/index.html", {read: true});
-        response.body = Deno.readAllSync(angularIndex);
+        return Deno.readAllSync(angularIndex);
     }
 }
 
