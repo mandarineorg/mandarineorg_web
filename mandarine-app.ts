@@ -1,4 +1,4 @@
-import { MandarineCore, Controller, GET, Middleware, MiddlewareTarget, ResponseParam } from "https://deno.land/x/mandarinets@master/mod.ts";
+import { MandarineCore, Controller, GET } from "https://deno.land/x/mandarinets@develop/mod.ts";
 import * as flags from "https://deno.land/std@0.61.0/flags/mod.ts";
 
 const { args } = Deno;
