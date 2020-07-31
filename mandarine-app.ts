@@ -8,10 +8,16 @@ const port = argPort ? Number(argPort) : DEFAULT_PORT;
 
 @Controller()
 export class MyController {
+    
     @GET('/(.*)')
     public handler1() {
         const angularIndex = Deno.openSync("./app/mandarine-static/index.html", {read: true});
         return Deno.readAllSync(angularIndex);
+    }
+
+    @GET('/mandarine')
+    public handler2() {
+        return "You have found the secret endpoint. This is such a Mandarine moment!";
     }
 }
 
