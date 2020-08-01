@@ -15,6 +15,7 @@ import { MarkdownModule } from 'ngx-markdown';
 import { DocsComponent } from './components/pages/docs/docs.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MatMenuModule } from '@angular/material/menu';
     HttpClientModule,
     MarkdownModule.forRoot({loader: HttpClient}),
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

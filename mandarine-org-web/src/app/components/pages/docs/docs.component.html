@@ -5,6 +5,18 @@
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">Documentation </div>
+      <hr>
+      <div style="margin-left: 8%;">
+      <mat-form-field appearance="fill">
+        <mat-label>{{data.docVersion || "Master" }}</mat-label>
+        <mat-select (selectionChange)="this.dropdownVersionChange($event)" name="Master">
+          <mat-option *ngFor="let version of currentVersions" [value]="version">
+            {{version}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      </div>
+      <hr>
 
       <div class="list-group list-group-flush just-padding">
 

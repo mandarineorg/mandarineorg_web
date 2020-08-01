@@ -33,6 +33,8 @@ export class DocsComponent implements OnInit, AfterViewInit {
   @ViewChild('toggleElement')
   public toggleElement: ElementRef;
 
+  public currentVersions = MandarineWeb.docVersions;
+
   constructor(private route: ActivatedRoute, private router: Router, private markdownService: MarkdownService, private httpClient: HttpClient) {
     this.markdownService.renderer.heading = (text: string, level: number) => {
       const escapedText = CommonsUtils.sanitizeTitles(text);
@@ -150,5 +152,10 @@ export class DocsComponent implements OnInit, AfterViewInit {
     } else {
       return `${CommonsUtils.sanitizeTitles(item.title)}-${type}`;
     }
+  }
+
+  public dropdownVersionChange($event) {
+    this.data.docVersion = $event.value;
+    this.router.navigate([`/docs/${this.data.docVersion}/${this.data.product}/${this.data.requestedDocs}`])
   }
 }
