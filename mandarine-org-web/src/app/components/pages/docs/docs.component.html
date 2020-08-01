@@ -36,13 +36,15 @@
             <ng-container *ngFor="let item of list; let i = index;">
 
               <li style="{{ (children == true) ? 'margin-left: -0.75rem; padding-top: 5px; list-style: decimal' : 'margin-left: 0.5rem; padding-top: 5px; margin-top: 1rem; list-style: none'}}">
-                <ng-container *ngIf="!item.url">
-                  <ng-container *ngTemplateOutlet="menuItem; context: { item: item, isChildren: children, parentItem: parentItem }"></ng-container>
+                <ng-container [ngSwitch]="item.url == undefined">
+                  <a [routerLink]="'/docs/' + getVersion() + '/' + data.product + '/' + item.url" class="menuItem" *ngSwitchCase="false">
+                    <ng-container *ngTemplateOutlet="menuItem; context: { item: item, isChildren: children, hasChildren: (item.children && item.children.length > 0), parentItem: parentItem }"></ng-container>
+                  </a>
+                  <a class="menuItem" *ngSwitchCase="true">
+                    <ng-container *ngTemplateOutlet="menuItem; context: { item: item, isChildren: children, hasChildren: (item.children && item.children.length > 0), parentItem: parentItem }"></ng-container>
+                  </a>
                 </ng-container>
 
-                <a [routerLink]="'/docs/' + getVersion() + '/' + data.product + '/' + item.url" class="menuItem" *ngIf="item.url">
-                  <ng-container *ngTemplateOutlet="menuItem; context: { item: item, isChildren: children, hasChildren: (item.children && item.children.length > 0), parentItem: parentItem }"></ng-container>
-                </a>
 
 
                 <ng-container *ngIf="item.children && item.children.length > 0">

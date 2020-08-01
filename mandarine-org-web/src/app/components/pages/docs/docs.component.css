@@ -66,6 +66,7 @@
   transition: all .3s;
   text-decoration: none!important;
   color: #2c3e50;
+  cursor: pointer;
 }
 .menuItem:hover {
   color: #ea4c28;
