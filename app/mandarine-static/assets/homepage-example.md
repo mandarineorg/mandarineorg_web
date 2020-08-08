@@ -1,5 +1,5 @@
 ```typescript
-import { MandarineCore, Controller, GET } from "https://deno.land/x/mandarinets/mod.ts"; 
+import { MandarineCore, Controller, GET } from "https://deno.land/x/mandarinets@v1.4.0/mod.ts"; 
 
 @Controller() 
 export class MyController { 
