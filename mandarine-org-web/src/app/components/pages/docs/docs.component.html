@@ -5,8 +5,8 @@
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">Documentation </div>
-      <hr>
-      <div style="margin-left: 8%;">
+      <hr style="margin-top: 0.3rem;">
+      <div style="margin-left: 8%; margin-bottom: -1rem;">
       <mat-form-field appearance="fill">
         <mat-label>{{data.docVersion || "Master" }}</mat-label>
         <mat-select (selectionChange)="this.dropdownVersionChange($event)" name="Master">
@@ -25,8 +25,8 @@
         <ng-template #menuItem let-item="item" let-isChildren="isChildren" let-hasChildren="hasChildren" let-parentItem="parentItem">
           <div (click)="toggleMenuItems($event, item, parentItem)">
             <span style="{{ isChildren == true ? 'font-size: 16px;' : 'margin-bottom: 2.5px; font-size: 20px; color: #ea4c28;' }}">{{ item.title }}</span>
-            <ng-container *ngIf="hasChildren">
-              <img id="{{item.title}}-toggle-arrow" class="menu-arrow down" src="assets/images/doc-arrow-up.svg" />
+            <ng-container *ngIf="isChildren && hasChildren">
+              <img id="{{this.getToggeableId(item, parentItem, 'toggle-arrow')}}" class="menu-arrow down" src="assets/images/doc-arrow-up.svg" />
             </ng-container>
           </div>
         </ng-template>
@@ -45,11 +45,9 @@
                   </a>
                 </ng-container>
 
-
-
                 <ng-container *ngIf="item.children && item.children.length > 0">
                   <ul id="{{this.getToggeableId(item, parentItem, 'toggeable')}}" class="{{ hasChildren ? 'hide-el' : 'show-el' }}">
-                    <ng-container *ngTemplateOutlet="recursiveMenu; context: { list: item.children, children: true, hasChildren: (item.children && item.children.length > 0) }"></ng-container>
+                    <ng-container *ngTemplateOutlet="recursiveMenu; context: { list: item.children, children: true, hasChildren: (item.children && item.children.length > 0), parentItem: item }"></ng-container>
                   </ul>
                 </ng-container>
               </li>
