@@ -210,3 +210,7 @@ mandarine-footer footer {
   background-color: rgba(0,0,0,.04) !important;
   margin-top: 5rem !important;
 }
+
+.mat-drawer-content {
+  overflow: unset !important;
+}

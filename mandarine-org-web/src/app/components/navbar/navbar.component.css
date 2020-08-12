@@ -14,3 +14,13 @@
   background-image: url(/assets/images/fclogo.svg);
   animation-fill-mode: forwards;
 }
+
+.items-end {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.items-end a {
+  text-decoration: none !important;
+}
