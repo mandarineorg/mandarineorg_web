@@ -205,8 +205,8 @@ mandarine-blog markdown {
 }
 
 mandarine-footer footer {
-  position: absolute;
   bottom: 0px;
   width: 100%;
   background-color: rgba(0,0,0,.04) !important;
+  margin-top: 5rem !important;
 }
