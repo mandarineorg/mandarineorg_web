@@ -12,6 +12,7 @@ a {
 .post-title {
   font-weight: 600;
   font-size: 3.5rem;
+  font: 500 3rem Roboto,Helvetica Neue,sans-serif !important;
 }
 
 .blog-container-max-size {
