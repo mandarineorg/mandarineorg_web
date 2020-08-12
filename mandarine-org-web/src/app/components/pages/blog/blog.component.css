@@ -1,0 +1,19 @@
+.blog-margin {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.news-header {
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+}
+
+.post-title {
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+
+.blog-container-max-size {
+  max-width: 768px;
+}

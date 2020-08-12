@@ -1,0 +1,24 @@
+.mat-toolbar.mat-primary {
+  background: #0a0a0a !important;
+  color: #fff;
+}
+
+.navbar-logo {
+  background-image: url(/assets/images/full-logo-simple.svg);
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 51px;
+}
+
+.items-end {
+  margin-left: 100%;
+}
+
+.items-end span {
+  margin-left: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+

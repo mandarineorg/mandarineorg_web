@@ -35,8 +35,9 @@ export namespace MandarineWeb {
 
   export const REPOSITORIES = {
     mandarine: "https://github.com/mandarineorg/mandarinets"
-  }
+  };
 
-  export const docVersions = ["v1.5.0", "v1.4.0", "v1.3.0", "v1.2.3", "v1.2.2"]
+  export const docVersions = ["v1.5.0", "v1.4.0", "v1.3.0", "v1.2.3", "v1.2.2"];
 
+  export const MANDARINE_WEBSITE_REPO_RAW = "https://raw.githubusercontent.com/mandarineorg/mandarineorg_web/master";
 }

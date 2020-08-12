@@ -16,6 +16,11 @@ import { DocsComponent } from './components/pages/docs/docs.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSelectModule } from '@angular/material/select';
+import { BlogComponent } from './components/pages/blog/blog.component';
+import { BlogNavbarHeader } from './components/blog-navbar/navbar.component';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,9 @@ import { MatSelectModule } from '@angular/material/select';
     HomepageComponent,
     NavbarHeader,
     FooterComponent,
-    DocsComponent
+    DocsComponent,
+    BlogComponent,
+    BlogNavbarHeader
   ],
   imports: [
     BrowserModule,
@@ -36,7 +43,10 @@ import { MatSelectModule } from '@angular/material/select';
     MarkdownModule.forRoot({loader: HttpClient}),
     MatButtonModule,
     MatMenuModule,
-    MatSelectModule
+    MatSelectModule,
+    MatListModule,
+    MatIconModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,49 @@
+<nav class="max-w-screen-lg mx-auto flex items-center justify-between">
+<mandarine-blog-navbar></mandarine-blog-navbar>
+</nav>
+
+<ng-container *ngIf="this.isPost === true && this.loadingStatus === 1">
+    <div class="blog-container-max-size mx-auto items-center justify-between" style="padding-left: 2rem; padding-right: 2rem; padding-top: 5rem;">
+      <a [routerLink]="'/posts'" style="font-size: 16px">
+        &#8592; Back to overview
+      </a>
+      <br>
+      <div class="border-b-2 border-gray-100" style="margin-top: 7%; margin-bottom: 3rem;">
+        <h1 class="post-title">{{ post.title }}</h1>
+        <br>
+        <p class="text-base leading-5 text-gray-500"> {{ post.date | date:"MMMM dd, yyyy" }} </p>
+        <p class="text-base leading-5 text-gray-500"> {{ post.authorObject.name }} </p>
+      </div>
+
+      <div style="margin-left: 1.5rem; margin-right: 1.5rem;">
+        <markdown [src]="this.post.postResourceUrl"></markdown>
+      </div>
+
+    </div>
+
+</ng-container>
+
+<ng-container *ngIf="this.isPost !== true && this.loadingStatus === 1">
+    <div class="max-w-screen-lg mx-auto items-center justify-between" style="padding-left: 1rem;">
+
+      <div class="border-b-2 border-gray-100" style="margin-top: 5%; margin-bottom: 3rem;">
+        <h2 class="news-header">News</h2>
+        <span style="font-size: 1.25rem;" class="text-gray-500">Updates about Mandarine's latest news from the core team.</span>
+      </div>
+
+      <div id="news-container">
+        <ng-container *ngIf="this.posts.length > 0">
+          <ng-container *ngFor="let postData of posts; index as i;">
+            <div class="news-box">
+              <p class="text-sm leading-5 text-gray-500"> {{ postData.date | date:"MMMM dd, yyyy" }} </p>
+              <h3 class="mt-2 text-xl leading-7 font-semibold text-gray-900">{{ postData.title }}</h3>
+              <p class="mt-3 text-base leading-6 text-gray-500"> {{ postData.description }}</p>
+              <a class="text-base leading-6 font-semibold text-blue-600" [routerLink]="'/posts/' + postData.sanitizedTitle">Read Post</a>
+            </div>
+          </ng-container>
+        </ng-container>
+      </div>
+    </div>
+</ng-container>
+
+<mandarine-footer></mandarine-footer>
