@@ -35,6 +35,7 @@
               "node_modules/prismjs/components/prism-bash.js",
               "node_modules/prismjs/components/prism-typescript.js",
               "node_modules/prismjs/components/prism-javascript.js",
+              "node_modules/prismjs/components/prism-javadoclike.js",
               "node_modules/prismjs/components/prism-javadoc.js",
               "node_modules/prismjs/components/prism-json.js",
               "node_modules/emoji-toolkit/lib/js/joypixels.js"
@@ -111,6 +112,7 @@
               "node_modules/prismjs/components/prism-bash.js",
               "node_modules/prismjs/components/prism-typescript.js",
               "node_modules/prismjs/components/prism-javascript.js",
+              "node_modules/prismjs/components/prism-javadoclike.js",
               "node_modules/prismjs/components/prism-javadoc.js",
               "node_modules/prismjs/components/prism-json.js",
               "node_modules/emoji-toolkit/lib/js/joypixels.js"
