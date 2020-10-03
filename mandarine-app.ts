@@ -1,5 +1,5 @@
-import { MandarineCore, Controller, GET } from "https://deno.land/x/mandarinets@v1.5.0/mod.ts";
-import * as flags from "https://deno.land/std@0.61.0/flags/mod.ts";
+import { MandarineCore, Controller, GET } from "https://deno.land/x/mandarinets@v2.1.0/mod.ts";
+import * as flags from "https://deno.land/std@0.71.0/flags/mod.ts";
 
 const { args } = Deno;
 const DEFAULT_PORT = 8080;
