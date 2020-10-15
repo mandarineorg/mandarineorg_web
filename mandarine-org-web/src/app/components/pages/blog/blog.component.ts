@@ -73,6 +73,6 @@ export class BlogComponent implements OnInit {
 
   public async loadPosts() {
       this.posts = await this.blogsService.getPosts();
-      console.log(this.posts);
+      this.posts = this.posts.sort((a: PostMetadata,b: PostMetadata)=> b.date.localeCompare(a.date));
   }
 }
