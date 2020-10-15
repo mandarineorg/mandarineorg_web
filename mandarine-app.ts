@@ -1,4 +1,4 @@
-import { MandarineCore, Controller, GET } from "https://deno.land/x/mandarinets@v2.1.3/mod.ts";
+import { MandarineCore, Controller, GET } from "https://deno.land/x/mandarinets@2.1.3/mod.ts";
 import * as flags from "https://deno.land/std@0.71.0/flags/mod.ts";
 
 const { args } = Deno;
