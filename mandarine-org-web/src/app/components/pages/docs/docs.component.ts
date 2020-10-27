@@ -33,7 +33,7 @@ export class DocsComponent implements OnInit, AfterViewInit {
   @ViewChild('toggleElement')
   public toggleElement: ElementRef;
 
-  public currentVersions = MandarineWeb.docVersions;
+  public currentVersions = [];
 
   constructor(private route: ActivatedRoute, private router: Router, private markdownService: MarkdownService, private httpClient: HttpClient) {
     this.markdownService.renderer.heading = (text: string, level: number) => {
@@ -73,7 +73,7 @@ export class DocsComponent implements OnInit, AfterViewInit {
       }
 
       if (!this.core.menuItems) {
-        this.core.menuItems = await this.httpClient.get(`${MandarineWeb.REPOSITORIES_RAW_CONTENT[this.data.product]}/${this.getVersion()}/docs/web/${this.data.product}/menu-items.json`).toPromise();
+        this.core.menuItems = await this.httpClient.get(`${this.getGithubDocsUrl()}/menu-items.json`).toPromise();
       }
 
       this.core.loaded = true;
@@ -103,6 +103,8 @@ export class DocsComponent implements OnInit, AfterViewInit {
 
       this.data.requestedDocs = params['doc'];
       this.data.docVersion = params['version'];
+
+      this.currentVersions = MandarineWeb.docVersions[this.data.product];
 
       await this.processGithubFiles();
   }
@@ -143,7 +145,10 @@ export class DocsComponent implements OnInit, AfterViewInit {
   }
 
   public getGithubDocsUrl() {
-    return `${MandarineWeb.REPOSITORIES_RAW_CONTENT[this.data.product]}/${this.getVersion()}/docs/web/${this.data.product}`;
+    let rawUrl = MandarineWeb.REPOSITORIES_RAW_CONTENT[this.data.product];
+    rawUrl = rawUrl.replace("%version%", this.getVersion());
+
+    return `${rawUrl}/docs/web/${this.data.product}`;
   }
 
   public getToggeableId(item, parent, type) {
